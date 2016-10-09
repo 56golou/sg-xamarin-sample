@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sgStationData", "sgStationD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{BB7CE2D1-C923-47BD-B7D2-D818EEE6AC79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{861525B0-3659-4DA3-8A06-FAC92FCD84C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sgStationDataXML", "sgStationDataXML\sgStationDataXML.csproj", "{D723012E-64B3-4D5B-9EBE-377900BD530E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,16 @@ Global
 		{BB7CE2D1-C923-47BD-B7D2-D818EEE6AC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB7CE2D1-C923-47BD-B7D2-D818EEE6AC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB7CE2D1-C923-47BD-B7D2-D818EEE6AC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861525B0-3659-4DA3-8A06-FAC92FCD84C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861525B0-3659-4DA3-8A06-FAC92FCD84C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861525B0-3659-4DA3-8A06-FAC92FCD84C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861525B0-3659-4DA3-8A06-FAC92FCD84C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D723012E-64B3-4D5B-9EBE-377900BD530E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
