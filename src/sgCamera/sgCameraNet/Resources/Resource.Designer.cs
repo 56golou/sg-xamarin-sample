@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("sgClock2.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("sgCameraNet.Resource", IsApplication=true)]
 
-namespace sgClock2
+namespace sgCameraNet
 {
 	
 	
@@ -47,9 +47,6 @@ namespace sgClock2
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
-			// aapt resource value: 0x7f020001
-			public const int sg400 = 2130837505;
-			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -63,11 +60,11 @@ namespace sgClock2
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int imageView1 = 2131034112;
-			
 			// aapt resource value: 0x7f050001
-			public const int textView1 = 2131034113;
+			public const int imageView1 = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int myButton = 2131034112;
 			
 			static Id()
 			{

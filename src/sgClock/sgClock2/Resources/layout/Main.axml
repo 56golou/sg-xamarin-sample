@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
         <ImageView
-            android:src="@drawable/cat1"
+            android:src="@drawable/sg400"
             android:layout_width="400dp"
             android:layout_height="400dp"
             android:layout_marginTop="0dp"

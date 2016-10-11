@@ -5,20 +5,21 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Graphics;
 using Java.IO;
+using Android.Graphics;
 using Android.Provider;
-using System.Collections.Generic;
-using Android.Content.PM;
 
-namespace sgCamera
+namespace sgCameraNet
 {
+    /* できるだけ、System.IO のような標準ライブラリを使う */
+
+
     [Activity(Label = "sgCamera", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        public File _file;
-        public File _dir;
-        public Bitmap bitmap;
+        public string _file;
+        public string _dir;
+        public Android.Graphics.Bitmap bitmap;
 
         ImageView image1;
 
