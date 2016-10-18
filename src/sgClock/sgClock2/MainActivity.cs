@@ -34,18 +34,20 @@ namespace sgClock2
 
 
             int[] bmps = new int[] {
-                Resource.Drawable.sg400_1,
-                Resource.Drawable.sg400_2,
-                Resource.Drawable.sg400_3,
-                Resource.Drawable.sg400_4,
-                Resource.Drawable.sg400_5,
-            };
+            Resource.Drawable.sg400_1,
+            Resource.Drawable.sg400_2,
+            Resource.Drawable.sg400_3,
+            Resource.Drawable.sg400_4,
+            Resource.Drawable.sg400_5,
+        };
             int index = -1;
 
-            _timer = new Task(async () => {
+            _timer = new Task(async () =>
+            {
                 while (true)
                 {
-                    RunOnUiThread(() => {
+                    RunOnUiThread(() =>
+                    {
                         if (timeFormat == true)
                         {
                             text1.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -54,8 +56,8 @@ namespace sgClock2
                         {
                             text1.Text = DateTime.Now.ToString("yyyy-MM-dd");
                         }
-                        // 画像を切り替える
-                        if (DateTime.Now.Second % 10 == 0)
+                    // 画像を切り替える
+                    if (DateTime.Now.Second % 10 == 0)
                         {
                             index++;
                             if (index >= bmps.Length)
@@ -63,14 +65,11 @@ namespace sgClock2
 
                             image1.SetImageResource(bmps[index]);
                         }
-
-
                     });
                     await Task.Delay(1000);
                 }
             });
             _timer.Start();
-
         }
 
         private void Image1_Click(object sender, EventArgs e)
