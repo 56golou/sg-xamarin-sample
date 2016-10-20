@@ -32,12 +32,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Test.cs" />
-    <Compile Include="..\sgUnitTest\CheckIP.cs">
-      <Link>sgUnitTest\CheckIP.cs</Link>
-    </Compile>
+    <Compile Include="CheckIP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sgUnitTest\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
