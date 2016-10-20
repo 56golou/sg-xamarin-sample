@@ -61,7 +61,15 @@ namespace sgUnitTest4NUnit
 			Assert.AreEqual(false, ip.Check(ipaddr));
 		}
 
-		[Test]
+        [Test]
+        public void 文字列を含む場合()
+        {
+            string ipaddr = "255.255.xxx.255";
+            var ip = new CheckIP();
+            Assert.AreEqual(false, ip.Check(ipaddr));
+        }
+
+        [Test]
 		public void 途中で空欄があっても大丈夫()
 		{
 			string ipaddr = "127. 0     .0.1   ";
