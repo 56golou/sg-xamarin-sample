@@ -16,10 +16,10 @@ namespace sgFavo
 
         // ここは消しておくこと!!! 
         // MACアドレスで暗号化するとか。
-        const string ApiKey = "";
-        const string ApiSecret = "";
-        const string AccessToke = "";
-        const string AccessTokeSecret = "";
+        const string ApiKey = "API_KEY";
+        const string ApiSecret = "API_SECRET";
+        const string AccessToken = "ACCESS_TOKEN";
+        const string AccessTokenSecret = "ACCESS_TOKEN_SECRET";
 
         TextView text1;
         ListView lv1;
@@ -50,7 +50,7 @@ namespace sgFavo
         /// <param name="e"></param>
         private async void Button1_Click(object sender, EventArgs e)
         {
-            var tokens = CoreTweet.Tokens.Create(ApiKey, ApiSecret, AccessToke, AccessTokeSecret);
+            var tokens = CoreTweet.Tokens.Create(ApiKey, ApiSecret, AccessToken, AccessTokenSecret);
             var favs = await tokens.Favorites.ListAsync();
 
 
@@ -61,7 +61,7 @@ namespace sgFavo
             }
 
             // var arr = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, lst);
-            var ad = new StatusAdapter(this, items );
+            var ad = new StatusAdapter(this, items);
             lv1.Adapter = ad;
             text1.Text = $"Count: {items.Count}";
             return;
@@ -74,7 +74,7 @@ namespace sgFavo
         Activity _activity;
         List<CoreTweet.Status> _items;
 
-        public StatusAdapter( Activity act, List<CoreTweet.Status> items  )
+        public StatusAdapter(Activity act, List<CoreTweet.Status> items)
         {
             _activity = act;
             _items = items;
@@ -104,7 +104,7 @@ namespace sgFavo
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;
-            if ( view == null )
+            if (view == null)
             {
                 view = _activity.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem2, null);
             }

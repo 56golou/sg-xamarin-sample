@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#FFDAFF7F"
+    android:background="#FF000000"
     android:padding="8dp">
     <LinearLayout
         android:id="@+id/Text"
@@ -14,22 +14,24 @@
             android:id="@+id/Text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FF7F3300"
-            android:textSize="20dip"
-            android:textStyle="italic" />
+            android:textColor="#FFAAAAAA"
+            android:textSize="24dip"
+            android:text="name" />
         <TextView
             android:id="@+id/Text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14dip"
-            android:textColor="#FF267F00"
-            android:paddingLeft="100dip" />
+            android:textColor="#FFAAAAAA"
+            android:text="sample text2 xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx"
+            android:paddingLeft="5dip"
+            android:layout_marginRight="70dp" />
     </LinearLayout>
     <ImageView
         android:id="@+id/Image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:padding="5dp"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="3dp"
         android:src="@drawable/icon"
         android:layout_alignParentRight="true" />
 </RelativeLayout>

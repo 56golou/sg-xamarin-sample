@@ -17,18 +17,17 @@ namespace ConsoleApplication1
         }
 
         // ここは消しておくこと!!! 
-        // MACアドレスで暗号化するとか。
-        const string ApiKey = "";
-        const string ApiSecret = "";
-        const string AccessToke = "";
-        const string AccessTokeSecret = "";
+        const string ApiKey = "API_KEY";
+        const string ApiSecret = "API_SECRET";
+        const string AccessToken = "ACCESS_TOKEN";
+        const string AccessTokenSecret = "ACCESS_TOKEN_SECRET";
 
         public async Task Go()
         {
-            var tokens = CoreTweet.Tokens.Create(ApiKey, ApiSecret, AccessToke, AccessTokeSecret);
+            var tokens = CoreTweet.Tokens.Create(ApiKey, ApiSecret, AccessToken, AccessTokenSecret);
             var favs = await tokens.Favorites.ListAsync();
 
-            foreach ( var it in favs )
+            foreach (var it in favs)
             {
                 Console.WriteLine("---");
                 Console.WriteLine($"Id: {it.Id}");
